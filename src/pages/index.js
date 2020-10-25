@@ -1,13 +1,12 @@
 import React, {useState} from 'react';
 import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar';
+import Landing from '../components/Landing'
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState(false);
-
     const toggle = () =>  setIsOpen(!isOpen);
-    //https://www.youtube.com/watch?v=Nl54MJDR2p8
-    //1:13:42
+  
     return (
         <>
             <Sidebar 
@@ -17,6 +16,10 @@ const Home = () => {
             <Navbar 
                 toggle={toggle}
             />
+            <Landing/>
+            <div style={{height : '1000px', width : '100%'}}>
+
+            </div>
         </>
     )
 }
