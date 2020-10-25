@@ -17,9 +17,9 @@ const Home = () => {
                 toggle={toggle}
             />
             <Landing/>
-            <div style={{height : '1000px', width : '100%'}}>
-
-            </div>
+            <div id="about" style={{height : '1000px', width : '100%' }}> </div>
+            <div id="skills" style={{height : '1000px', width : '100%', background : 'gray'}}> </div>
+            <div id="contact" style={{height : '1000px', width : '100%'}}> </div>
         </>
     )
 }

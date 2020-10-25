@@ -21,24 +21,27 @@ const Sidebar = (props) => {
             <SidebarWrapper>
                 <SidebarMenu>
                     <SidebarLink 
-                        to="/about" 
+                        to="about" 
                         onClick={props.toggle}
+                        whileHover={{ scale: 1.2}} 
                     > 
                         About 
                     </SidebarLink>
                 </SidebarMenu>
                 <SidebarMenu>
                     <SidebarLink 
-                        to="/skills" 
+                        to="skills" 
                         onClick={props.toggle}
+                        whileHover={{ scale: 1.2}}  
                     > 
                         Skills 
                     </SidebarLink>
                 </SidebarMenu>
                 <SidebarMenu>
                     <SidebarLink 
-                        to="/contact" 
+                        to="contact" 
                         onClick={props.toggle}
+                        whileHover={{ scale: 1.2}} 
                     > 
                         Contact 
                     </SidebarLink>

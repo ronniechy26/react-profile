@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 import { Link } from 'react-scroll';
+import { motion } from "framer-motion";
 import {
     MdArrowForward,
     MdKeyboardArrowRight
 } from 'react-icons/md';
 
 export const LandingContainer = styled.div`
-    background-color : gray;
     display : flex;
     justify-content : left;
     width : 100%;
@@ -107,11 +107,9 @@ export const LandingBtn = styled(Link)`
     }
 
     &:hover{
-        transition : all 0.2s ease-in-out;
-        background : #fff;
-        color : #00A3FF;
+        transform : scale(2);
+        font-weight : 700;
     }
-
 `
 
 export const ArrowForward =  styled(MdArrowForward)`
@@ -140,7 +138,7 @@ export const IconWrapper = styled.div`
     justify-content : center;
 `
 
-export const SocialMediaIcon = styled.img`
+export const SocialMediaIcon = styled(motion.img)`
     height : 1.9rem;
     width : 1.9rem;
     margin-right : 1rem;
