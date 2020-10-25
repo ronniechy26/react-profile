@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import Typical from 'react-typical';
 import { 
     LandingContainer, 
     LandingImgBg, 
@@ -37,7 +38,11 @@ const Landing = () => {
                     {`I am a  `}
                </LandingH2>
                <LandingH2 colorBlue={true}>
-                    Web Developer.
+                    <Typical
+                        steps={['Web Developer', 1000, 'Web Programmer.', 2000]}
+                        loop={1}
+                        wrapper="LandingH2"
+                    />
                </LandingH2>
                <LandingBtnWrapper>
                    <LandingBtn
