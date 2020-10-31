@@ -10,10 +10,21 @@ export const LandingContainer = styled.div`
     display : flex;
     justify-content : left;
     width : 100%;
-    height : 940px;
+    height : 950px;
     text-align : center;
     align-items : center;
     z-index : 1;
+    position : relative;
+    
+    :before{
+        content : '';
+        position : absolute;
+        top: 0;
+        left :0;
+        right :0;
+        bottom : 0;
+        z-index : 2;
+    }
 
     @media screen and (max-width : 768px){
         justify-content : center;
@@ -39,6 +50,7 @@ export const LandingImgBg = styled.div`
 export const ImgBg = styled.img`
     width : 100%;
     height : 100%;
+    object-fit : cover;
 `
 
 export const LandingContent =  styled.div`
